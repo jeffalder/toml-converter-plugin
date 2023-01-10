@@ -24,11 +24,15 @@ dependencies {
 }
 
 gradlePlugin {
-    // Define the plugin
+    website = 'https://github.com/jeffalder/toml-converter-plugin'
+    vcsUrl = 'https://github.com/jeffalder/toml-converter-plugin'
     plugins {
         'toml-converter' {
             id = 'com.github.jeffalder.tomlconverter'
             implementationClass = 'com.github.jeffalder.tomlconverter.TomlConverterPlugin'
+            displayName = 'Dependency to Toml Converter Plugin'
+            description = 'Extracts your build gradle dependencies and constraints, sets up a Toml file, and replaces entries in build.gradle.'
+            tags.set(['toml','convert','dependency','automatic'])
         }
     }
 }
