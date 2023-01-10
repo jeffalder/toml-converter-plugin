@@ -36,7 +36,7 @@ public class PluginTest {
         Files.write(buildFile.toPath(), List.of("",
                 "plugins {",
                 "  id('java')",
-                "  id('com.github.jeffalder.tomlconverter')",
+                "  id('io.github.jeffalder.tomlconverter')",
                 "}",
                 "",
                 "dependencies {",
@@ -82,7 +82,7 @@ public class PluginTest {
         final var matcher = Pattern.compile("\n"
                         + "plugins \\{\n"
                         + "  id\\('java'\\)\n"
-                        + "  id\\('com.github.jeffalder.tomlconverter'\\)\n"
+                        + "  id\\('io.github.jeffalder.tomlconverter'\\)\n"
                         + "}\n"
                         + "\n"
                         + "dependencies \\{\n"
