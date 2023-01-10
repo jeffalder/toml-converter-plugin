@@ -46,4 +46,4 @@ jobs:
     - name: Publish to Gradle Plugins Portal
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
-        arguments: publish
+        arguments: publishPlugins
