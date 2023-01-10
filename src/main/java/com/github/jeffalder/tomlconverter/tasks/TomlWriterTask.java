@@ -29,7 +29,7 @@ import static java.util.stream.Collectors.*;
 /**
  * <p>This task accepts the list of dependencies across all subprojects,
  * makes them unique, and writes out the {@literal libs.versions.toml} file.
- * <p>In doing so, it populates the output {@link TomlTable<LibraryEntry>}
+ * <p>In doing so, it populates the output {@link TomlTable}
  * used by later rewriter tasks.
  */
 public class TomlWriterTask extends DefaultTask implements FilePreparation {

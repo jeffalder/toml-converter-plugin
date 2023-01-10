@@ -23,7 +23,7 @@ import static java.util.Comparator.comparing;
  * For example, gradle code generation will not work properly if you have, say, "junit" and "junit-bom" prefixes.
  * In that case, {@code libs.junit} can either refer to a dependency <em>or</em> something that contains "getBom()",
  * but not both. This code works around this by adding a random suffix if it detects a conflict, yielding "junita123" and "junit-bom".
- * @param <T>
+ * @param <T> A type that implements {@link TomlTableRow} that becomes the row type.
  */
 public class TomlTable<T extends TomlTable.TomlTableRow> implements Iterable<Map.Entry<String, T>> {
     private final String tableName;
