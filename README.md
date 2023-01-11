@@ -12,7 +12,7 @@ Assumptions:
 Add this to your `build.gradle` in the root project:
 ```groovy
 plugins {
-    id('io.github.jeffalder.tomlconverter') version '0.0.3'
+    id('io.github.jeffalder.tomlconverter') version '1.0.0'
 }
 ```
 
